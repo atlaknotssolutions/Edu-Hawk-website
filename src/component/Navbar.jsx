@@ -177,13 +177,74 @@ CHINA        </a>
     </div>
   </div>
 </div>
-            <a
-              href="/blog"
-              className="text-[#2F327D] hover:text-[#F48C06] transition-colors duration-200 relative group"
-            >
-              Our Blog
-              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#F48C06] group-hover:w-full transition-all duration-300"></span>
-            </a>
+          <div className="relative group">
+  <a
+    href="/blog"
+    className="text-[#2F327D] hover:text-[#F48C06] transition-colors duration-200 flex items-center gap-1"
+  >
+    Our Blog
+    <svg 
+      className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" 
+      fill="none" 
+      stroke="currentColor" 
+      viewBox="0 0 24 24"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+    </svg>
+  </a>
+
+  {/* Dropdown - hidden by default, shown on hover */}
+  <div 
+    className={`
+      absolute left-0 top-full pt-2 
+      opacity-0 invisible group-hover:opacity-100 group-hover:visible 
+      transition-all duration-200 transform 
+      group-hover:translate-y-0 translate-y-1
+      z-50
+    `}
+  >
+    <div className="bg-white rounded-lg shadow-xl border border-gray-100 min-w-[220px] overflow-hidden">
+      <div className="py-2">
+        <a 
+          href="/blog/education-blog" 
+          className="block px-5 py-2.5 text-[#2F327D] hover:bg-orange-50 hover:text-[#F48C06] transition-colors duration-150 font-medium"
+        >
+          Education Blog
+        </a>
+
+        <div className="border-t border-gray-100 my-1"></div>
+
+        <a 
+          href="/blog/mbbs-abroad" 
+          className="block px-5 py-2.5 text-[#2F327D] hover:bg-orange-50 hover:text-[#F48C06] transition-colors duration-150 font-medium"
+        >
+          MBBS Abroad
+        </a>
+
+        <a 
+          href="/blog/mbbs-abroad/bangladesh" 
+          className="block px-5 py-2.5 pl-8 text-gray-700 hover:bg-orange-50 hover:text-[#F48C06] transition-colors duration-150 text-sm"
+        >
+          MBBS Abroad in Bangladesh
+        </a>
+
+        <a 
+          href="/blog/mbbs-abroad/russia" 
+          className="block px-5 py-2.5 pl-8 text-gray-700 hover:bg-orange-50 hover:text-[#F48C06] transition-colors duration-150 text-sm"
+        >
+          MBBS Abroad in Russia
+        </a>
+
+        <a 
+          href="/blog/mbbs-abroad/georgia" 
+          className="block px-5 py-2.5 pl-8 text-gray-700 hover:bg-orange-50 hover:text-[#F48C06] transition-colors duration-150 text-sm"
+        >
+          MBBS Abroad in Georgia
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
             <a
               href="/services"
