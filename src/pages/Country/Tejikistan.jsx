@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import RussiaFlag from "../../Images/Russia/russia header threejpg.jpg";
-import kernal from "../../Images/Russia/about-russia.jpg";
-import Russianflag2 from "../../Images/country flag png/Russia.svg";
-import MARISTATEUNIVERSITY from "../../Images/Russia/MARI STATE UNIVERSITY.jpg";
+import kernal from "../../Images/university-image/kazakistan.jpg";
+import Russianflag2 from "../../Images/country flag png/Tajikistan.svg";
+import MARISTATEUNIVERSITY from "../../Images/tajikistan/Khatlon-State-Medical-University-Tajikistan.jpg";
 import ORELSTATEUNIVERSITY from "../../Images/Russia/OREL STATE UNIVERSITY.jpg";
 import ORENBURGSTATEUNIVERSITY from "../../Images/Russia/ORENBURG STATE UNIVERSITY.jpg";
 import TVERSTATEMEDICALUNIVERSITY from "../../Images/Russia/TVER STATE MEDICAL UNIVERSITY.jpeg";
@@ -23,7 +23,7 @@ const Tejikistan = () => {
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-2xl">
-              STUDY MBBS IN RUSSIA
+              STUDY MBBS IN TEJIKISTAN
             </h1>
           </div>
         </div>
@@ -44,7 +44,7 @@ const Tejikistan = () => {
           </div>
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-blue-900">
-              Explore MBBS Opportunities in Russia 2025–2026
+              Explore MBBS Opportunities in TEJIKISTAN 2025–2026
             </h2>
           </div>
         </div>
@@ -53,7 +53,7 @@ const Tejikistan = () => {
         <div className="grid md:grid-cols-2 gap-12 mb-20">
           <div>
             <h2 className="text-3xl font-bold text-center md:text-left text-blue-900 mb-6">
-              About Russia
+              About TEJIKISTAN
             </h2>
             <p className="text-lg leading-relaxed text-gray-700">
               Russia has become popular among medical students, who are looking
@@ -97,7 +97,7 @@ const Tejikistan = () => {
 
           <div>
             <img
-              src={kernal}
+              src="https://upload.wikimedia.org/wikipedia/commons/6/63/Tajik_Parliament_House%2C_Dushanbe%2C_Tajikistan.JPG"
               alt="Kremlin"
               className="rounded-xl shadow-2xl w-full h-auto object-cover"
             />
@@ -109,7 +109,7 @@ const Tejikistan = () => {
           {/* Left – Quick Info Table */}
           <div>
             <h3 className="text-2xl font-bold text-center text-blue-900 mb-6">
-              Quick Information – Study MBBS in Russia
+              Quick Information – Study MBBS in TEJIKISTAN
             </h3>
 
             <div className="overflow-x-auto">
@@ -147,7 +147,7 @@ const Tejikistan = () => {
           {/* Right – About MBBS */}
           <div>
             <h3 className="text-3xl font-bold text-blue-900 mb-6 text-center md:text-left">
-              About MBBS in Russia
+              About MBBS in TEJIKISTAN
             </h3>
             <p className="text-lg leading-relaxed text-gray-700">
               Studying MBBS in Russia is notably straightforward 
@@ -173,35 +173,23 @@ const Tejikistan = () => {
         {/* ==================== UNIVERSITIES GRID ==================== */}
         <div className="mb-20">
           <h2 className="text-4xl font-bold text-center text-blue-900 mb-12">
-            Top Medical Universities in Russia
+            Top Medical Universities in TEJIKISTAN
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: "Mari State University",
-                img: MARISTATEUNIVERSITY,
+                name: "Avicenna Tajik State Med. Uni.",
+                img: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Donishgohi_davlatii_tibbii_Tojikiston_ba_nomi_A_Sino.JPG",
               },
               {
-                name: "Orel State University",
-                img: ORELSTATEUNIVERSITY,
+                name: "Khatlon-State-Medical University",
+                img:MARISTATEUNIVERSITY,
               },
               {
-                name: "Orenburg State University",
-                img: ORENBURGSTATEUNIVERSITY,
-              },
-              {
-                name: "Perm State University",
-                img: "https://upload.wikimedia.org/wikipedia/commons/b/b4/%D0%9F%D0%B3%D0%BD%D0%B8%D1%83._%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81_%E2%84%965.jpg",
-              },
-              {
-                name: "Tver State Medical University",
-                img: TVERSTATEMEDICALUNIVERSITY,
-              },
-              {
-                name: "Altai State Medical University",
-                img: AltaiStateMedicalUniversity,
-              },
+                name: "Tajik National University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/3/36/Tajik_National_University_%28Main_Building%29.jpg",
+              }
             ].map((uni, i) => (
               <div
                 key={i}

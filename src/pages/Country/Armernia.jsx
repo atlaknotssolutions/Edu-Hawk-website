@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import RussiaFlag from "../../Images/Russia/russia header threejpg.jpg";
 import kernal from "../../Images/top medical collages list/Bangladesh Medical College.png";
-import Russianflag2 from "../../Images/country flag png/Bangladesh-Flag-PNG-Isolated-HD.png";
+import Russianflag2 from "../../Images/country flag png/am-wave-01.png";
 import MARISTATEUNIVERSITY from "../../Images/Russia/MARI STATE UNIVERSITY.jpg";
 import ORELSTATEUNIVERSITY from "../../Images/Russia/OREL STATE UNIVERSITY.jpg";
 import ORENBURGSTATEUNIVERSITY from "../../Images/Russia/ORENBURG STATE UNIVERSITY.jpg";
@@ -17,13 +17,13 @@ const Armernia = () => {
       <div className="relative h-screen overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/f/f6/2.%E0%A6%B6%E0%A6%BE%E0%A6%AA%E0%A6%B2%E0%A6%BE_%E0%A6%9A%E0%A6%A4%E0%A7%8D%E0%A6%AC%E0%A6%B0.jpg"
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Hayq_Square%2C_Vanadzor.jpg"
             alt="Kremlin Bridge City"
             className="w-full h-full object-cover brightness-75"
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-2xl">
-              STUDY MBBS IN  Kazakhstan
+              STUDY MBBS IN  ARMERNIA
             </h1>
           </div>
         </div>
@@ -44,7 +44,7 @@ const Armernia = () => {
           </div>
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-blue-900">
-              Explore MBBS Opportunities in Kazakhstan 2026–2027
+              Explore MBBS Opportunities in ARMERNIA 2026–2027
             </h2>
           </div>
         </div>
@@ -53,7 +53,7 @@ const Armernia = () => {
         <div className="grid md:grid-cols-2 gap-12 mb-20">
           <div>
             <h2 className="text-3xl font-bold text-center md:text-left text-blue-900 mb-6">
-              About Russia
+              About ARMERNIA
             </h2>
             <p className="text-lg leading-relaxed text-gray-700">
               Russia has become popular among medical students, who are looking
@@ -111,7 +111,7 @@ const Armernia = () => {
           {/* Left – Quick Info Table */}
           <div>
             <h3 className="text-2xl font-bold text-center text-blue-900 mb-6">
-              Quick Information – Study MBBS in Russia
+              Quick Information – Study MBBS in ARMERNIA
             </h3>
 
             <div className="overflow-x-auto">
@@ -161,10 +161,10 @@ const Armernia = () => {
           {/* Right – About MBBS */}
           <div>
             <h3 className="text-3xl font-bold text-blue-900 mb-6 text-center md:text-left">
-              About MBBS in Kazakhstan
+              About MBBS in ARMERNIA
             </h3>
             <p className="text-lg leading-relaxed text-gray-700">
-              Studying MBBS in Kazakhstan is notably straightforward
+              Studying MBBS in ARMERNIA is notably straightforward
             </p>
 
             {showMoreClimate ? (
@@ -187,35 +187,24 @@ const Armernia = () => {
         {/* ==================== UNIVERSITIES GRID ==================== */}
         <div className="mb-20">
           <h2 className="text-4xl font-bold text-center text-blue-900 mb-12">
-            Top Medical Universities in Russia
+            Top Medical Universities in ARMERNIA
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: "Bangladesh Medical College",
-                img: MARISTATEUNIVERSITY,
+                name: "Yerevan State Medical University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/3/3a/%D5%80%D5%A5%D6%80%D5%A1%D6%81%D5%AB_%D5%B0%D5%A1%D5%B4%D5%A1%D5%AC%D5%BD%D5%A1%D6%80%D5%A1%D5%B6.JPG",
               },
               {
-                name: "Orel State University",
-                img: ORELSTATEUNIVERSITY,
+                name: "Yerevan Haybusak University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/d/db/Haybusak-uni.JPG",
               },
               {
-                name: "Orenburg State University",
-                img: ORENBURGSTATEUNIVERSITY,
-              },
-              {
-                name: "Perm State University",
-                img: "https://upload.wikimedia.org/wikipedia/commons/b/b4/%D0%9F%D0%B3%D0%BD%D0%B8%D1%83._%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81_%E2%84%965.jpg",
-              },
-              {
-                name: "Tver State Medical University",
-                img: TVERSTATEMEDICALUNIVERSITY,
-              },
-              {
-                name: "Altai State Medical University",
-                img: AltaiStateMedicalUniversity,
-              },
+                name: "Mkhitar Gosh Armenian-Russian International University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/d/db/Haybusak-uni.JPG",
+              }
+             
             ].map((uni, i) => (
               <div
                 key={i}
@@ -240,7 +229,7 @@ const Armernia = () => {
         <div className="grid md:grid-cols-2 gap-12 mb-20">
           <div>
             <h2 className="text-3xl font-bold text-blue-900 mb-8 text-center md:text-left">
-              Advantages of Studying MBBS in Russia 2025–2026
+              Advantages of Studying MBBS in ARMERNIA 2025–2026
             </h2>
 
             <div className="space-y-6">
@@ -282,7 +271,7 @@ const Armernia = () => {
 
           <div>
             <h2 className="text-3xl font-bold text-blue-900 mb-8 text-center">
-              Cost of Study MBBS in Russia
+              Cost of Study MBBS in ARMERNIA
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
               The cost of the <strong> MBBS course in Russia</strong> is very

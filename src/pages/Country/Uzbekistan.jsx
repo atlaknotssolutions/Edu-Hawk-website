@@ -23,7 +23,7 @@ const Uzbekistan = () => {
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-2xl">
-              STUDY MBBS IN RUSSIA
+              STUDY MBBS IN UZBEKISTAN
             </h1>
           </div>
         </div>
@@ -44,7 +44,7 @@ const Uzbekistan = () => {
           </div>
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-blue-900">
-              Explore MBBS Opportunities in Russia 2025–2026
+              Explore MBBS Opportunities in UZBEKISTAN 2025–2026
             </h2>
           </div>
         </div>
@@ -53,7 +53,7 @@ const Uzbekistan = () => {
         <div className="grid md:grid-cols-2 gap-12 mb-20">
           <div>
             <h2 className="text-3xl font-bold text-center md:text-left text-blue-900 mb-6">
-              About Russia
+              About UZBEKISTAN
             </h2>
             <p className="text-lg leading-relaxed text-gray-700">
               Russia has become popular among medical students, who are looking
@@ -109,7 +109,7 @@ const Uzbekistan = () => {
           {/* Left – Quick Info Table */}
           <div>
             <h3 className="text-2xl font-bold text-center text-blue-900 mb-6">
-              Quick Information – Study MBBS in Russia
+              Quick Information – Study MBBS in UZBEKISTAN
             </h3>
 
             <div className="overflow-x-auto">
@@ -147,10 +147,10 @@ const Uzbekistan = () => {
           {/* Right – About MBBS */}
           <div>
             <h3 className="text-3xl font-bold text-blue-900 mb-6 text-center md:text-left">
-              About MBBS in Russia
+              About MBBS in UZBEKISTAN
             </h3>
             <p className="text-lg leading-relaxed text-gray-700">
-              Studying MBBS in Russia is notably straightforward 
+              Studying MBBS in UZBEKISTAN is notably straightforward 
             </p>
 
             {showMoreClimate ? (
@@ -173,7 +173,7 @@ const Uzbekistan = () => {
         {/* ==================== UNIVERSITIES GRID ==================== */}
         <div className="mb-20">
           <h2 className="text-4xl font-bold text-center text-blue-900 mb-12">
-            Top Medical Universities in Russia
+            Top Medical Universities in UZBEKISTAN
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -226,7 +226,7 @@ const Uzbekistan = () => {
         <div className="grid md:grid-cols-2 gap-12 mb-20">
           <div>
             <h2 className="text-3xl font-bold text-blue-900 mb-8 text-center md:text-left">
-              Advantages of Studying MBBS in Russia 2025–2026
+              Advantages of Studying MBBS in UZBEKISTAN 2025–2026
             </h2>
 
             <div className="space-y-6">

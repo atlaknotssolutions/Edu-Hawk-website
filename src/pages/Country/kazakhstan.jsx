@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import RussiaFlag from "../../Images/Russia/russia header threejpg.jpg";
-import kernal from "../../Images/top medical collages list/Bangladesh Medical College.png";
-import Russianflag2 from "../../Images/country flag png/Bangladesh-Flag-PNG-Isolated-HD.png";
-import MARISTATEUNIVERSITY from "../../Images/Russia/MARI STATE UNIVERSITY.jpg";
-import ORELSTATEUNIVERSITY from "../../Images/Russia/OREL STATE UNIVERSITY.jpg";
-import ORENBURGSTATEUNIVERSITY from "../../Images/Russia/ORENBURG STATE UNIVERSITY.jpg";
-import TVERSTATEMEDICALUNIVERSITY from "../../Images/Russia/TVER STATE MEDICAL UNIVERSITY.jpeg";
-import AltaiStateMedicalUniversity from "../../Images/Russia/Altai State Medical University.jpg";
+import kernal from "../../Images/university-image/kazakistan.jpg";
+import Russianflag2 from "../../Images/country flag png/Kazakhstan.svg";
+import MARISTATEUNIVERSITY from "../../Images/Kazakhstan/Asfendiyarov Kazakh National Medical University.jpg";
+import ORELSTATEUNIVERSITY from "../../Images/Kazakhstan/Karaganda State Medical University.jpg";
+import ORENBURGSTATEUNIVERSITY from "../../Images/Kazakhstan/Kokshetau State University.jpg";
+import TVERSTATEMEDICALUNIVERSITY from "../../Images/Kazakhstan/Semey State Medical University.jpg";
+import AltaiStateMedicalUniversity from "../../Images/Kazakhstan/South-Kazakhstan-Medical-Academy.jpg";
+import AltaiStateMedicalUniversity2 from "../../Images/Kazakhstan/West Kazakhstan Marat Ospanov State Medical University.jpg";
+
 const Kazakhstan = () => {
   const [showMoreAbout, setShowMoreAbout] = useState(false);
   const [showMoreClimate, setShowMoreClimate] = useState(false);
@@ -39,7 +41,7 @@ const Kazakhstan = () => {
             <img
               src={Russianflag2}
               alt="Russia flag"
-              className="w-32 md:w-40 border-4 border-gray-800 rounded shadow-lg"
+              className="w-32 md:w-40  rounded shadow-lg"
             />
           </div>
           <div>
@@ -194,28 +196,28 @@ The residential areas in Kyrgyzstan are also equipped with heating systems, whic
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: "Bangladesh Medical College",
+                name: "Asfendiyarov Kazakh Medical College",
                 img: MARISTATEUNIVERSITY,
               },
               {
-                name: "Orel State University",
+                name: "Karaganda State Medical University",
                 img: ORELSTATEUNIVERSITY,
               },
               {
-                name: "Orenburg State University",
+                name: "Kokshetau State University",
                 img: ORENBURGSTATEUNIVERSITY,
               },
               {
-                name: "Perm State University",
-                img: "https://upload.wikimedia.org/wikipedia/commons/b/b4/%D0%9F%D0%B3%D0%BD%D0%B8%D1%83._%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81_%E2%84%965.jpg",
-              },
-              {
-                name: "Tver State Medical University",
+                name: "Semey State Medical University",
                 img: TVERSTATEMEDICALUNIVERSITY,
               },
               {
-                name: "Altai State Medical University",
+                name: "South-Kazakhstan-Medical-Academy",
                 img: AltaiStateMedicalUniversity,
+              },
+              {
+                name: "West Kazakhstan Marat Ospanov State Medical University",
+                img: AltaiStateMedicalUniversity2,
               },
             ].map((uni, i) => (
               <div

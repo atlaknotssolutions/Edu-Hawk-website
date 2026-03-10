@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import RussiaFlag from "../../Images/Russia/russia header threejpg.jpg";
 import kernal from "../../Images/Russia/about-russia.jpg";
-import Russianflag2 from "../../Images/country flag png/Russia.svg";
+import Russianflag2 from "../../Images/country flag png/Belarus.svg";
 import MARISTATEUNIVERSITY from "../../Images/Russia/MARI STATE UNIVERSITY.jpg";
 import ORELSTATEUNIVERSITY from "../../Images/Russia/OREL STATE UNIVERSITY.jpg";
 import ORENBURGSTATEUNIVERSITY from "../../Images/Russia/ORENBURG STATE UNIVERSITY.jpg";
@@ -17,13 +17,13 @@ const Belarus = () => {
       <div className="relative h-screen overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={RussiaFlag}
+            src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Miensk_-_Plac_Niezale%C5%BEna%C5%9Bci.jpg"
             alt="Kremlin Bridge City"
             className="w-full h-full object-cover brightness-75"
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-2xl">
-              STUDY MBBS IN RUSSIA
+              STUDY MBBS IN BELARUS
             </h1>
           </div>
         </div>
@@ -44,7 +44,7 @@ const Belarus = () => {
           </div>
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-blue-900">
-              Explore MBBS Opportunities in Russia 2025–2026
+              Explore MBBS Opportunities in BELARUS 2025–2026
             </h2>
           </div>
         </div>
@@ -97,7 +97,7 @@ const Belarus = () => {
 
           <div>
             <img
-              src={kernal}
+              src="https://upload.wikimedia.org/wikipedia/commons/9/99/Victory_square%2C_Minsk_01.jpg"
               alt="Kremlin"
               className="rounded-xl shadow-2xl w-full h-auto object-cover"
             />
@@ -179,29 +179,22 @@ const Belarus = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: "Mari State University",
-                img: MARISTATEUNIVERSITY,
+                name: "Belarusian State Medical University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/f/fd/BSMI2020.jpg",
               },
               {
-                name: "Orel State University",
-                img: ORELSTATEUNIVERSITY,
+                name: "Gomel State Medical University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/5/58/Gomel_State_Medical_University.jpg",
               },
               {
-                name: "Orenburg State University",
-                img: ORENBURGSTATEUNIVERSITY,
+                name: "Vitebsk State Medical University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/5/58/%D0%92%D0%93%D0%9C%D0%A3_%28%D0%92%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA%29_-_%D0%9B%D0%A2%D0%9A.jpg",
               },
               {
-                name: "Perm State University",
-                img: "https://upload.wikimedia.org/wikipedia/commons/b/b4/%D0%9F%D0%B3%D0%BD%D0%B8%D1%83._%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81_%E2%84%965.jpg",
-              },
-              {
-                name: "Tver State Medical University",
-                img: TVERSTATEMEDICALUNIVERSITY,
-              },
-              {
-                name: "Altai State Medical University",
-                img: AltaiStateMedicalUniversity,
-              },
+                name: "Grodno State Medical University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Grodno_State_Medical_University.jpg",
+              }
+             
             ].map((uni, i) => (
               <div
                 key={i}

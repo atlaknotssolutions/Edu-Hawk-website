@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import RussiaFlag from "../../Images/Russia/russia header threejpg.jpg";
 import kernal from "../../Images/Russia/about-russia.jpg";
-import Russianflag2 from "../../Images/country flag png/Russia.svg";
+import Russianflag2 from "../../Images/country flag png/Egypt.svg";
 import MARISTATEUNIVERSITY from "../../Images/Russia/MARI STATE UNIVERSITY.jpg";
 import ORELSTATEUNIVERSITY from "../../Images/Russia/OREL STATE UNIVERSITY.jpg";
 import ORENBURGSTATEUNIVERSITY from "../../Images/Russia/ORENBURG STATE UNIVERSITY.jpg";
@@ -17,13 +17,13 @@ const Egypt = () => {
       <div className="relative h-screen overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={RussiaFlag}
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Alexandria_University.JPG/1280px-Alexandria_University.JPG"
             alt="Kremlin Bridge City"
             className="w-full h-full object-cover brightness-75"
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-2xl">
-              STUDY MBBS IN RUSSIA
+              STUDY MBBS IN EGYPT
             </h1>
           </div>
         </div>
@@ -97,7 +97,7 @@ const Egypt = () => {
 
           <div>
             <img
-              src={kernal}
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Egyptian_Museum_in_Cairo_in_May_2015.JPG"
               alt="Kremlin"
               className="rounded-xl shadow-2xl w-full h-auto object-cover"
             />
@@ -179,28 +179,28 @@ const Egypt = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: "Mari State University",
-                img: MARISTATEUNIVERSITY,
+                name: "Ain Shams University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Eng_asu_main_bldng.JPG",
               },
               {
-                name: "Orel State University",
-                img: ORELSTATEUNIVERSITY,
+                name: "Alexandria University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Alexandria_University.JPG/1280px-Alexandria_University.JPG",
               },
               {
-                name: "Orenburg State University",
-                img: ORENBURGSTATEUNIVERSITY,
+                name: "Cairo University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/5/57/CairoUniv.jpg",
               },
               {
-                name: "Perm State University",
+                name: "Helwan University",
                 img: "https://upload.wikimedia.org/wikipedia/commons/b/b4/%D0%9F%D0%B3%D0%BD%D0%B8%D1%83._%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81_%E2%84%965.jpg",
               },
               {
-                name: "Tver State Medical University",
-                img: TVERSTATEMEDICALUNIVERSITY,
+                name: "Kafrelsheikh University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/8/88/Faculty_of_Arts-Kafr_El-Sheikh_University_01.JPG",
               },
               {
-                name: "Altai State Medical University",
-                img: AltaiStateMedicalUniversity,
+                name: "Mansoura University",
+                img: "https://s3.ap-south-1.amazonaws.com/gotouniv/cover_photo/2002/cover_photo_1500X500.jpg",
               },
             ].map((uni, i) => (
               <div

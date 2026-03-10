@@ -38,6 +38,7 @@ import Nepal from './pages/Country/Nepal.jsx';
 import Tejikistan from './pages/Country/Tejikistan.jsx';
 import Uzbekistan from './pages/Country/Uzbekistan.jsx';
 import Vietnam from './pages/Country/Vietnam.jsx';
+import BlogSection from './pages/Blog/BlogSection.jsx';
 
 // import Contact from './pages/Contact';
 
@@ -117,7 +118,7 @@ const router = createBrowserRouter([
 
       
         {
-        path: 'mbbs-abroad/tejikistan',
+        path: 'mbbs-abroad/tajikisatin',
         element: <Tejikistan />,
       },
 
@@ -129,8 +130,14 @@ const router = createBrowserRouter([
 
       
         {
-        path: 'mbbs-abroad/vietnam',
+        path: 'mbbs-abroad/vintnam',
         element: <Vietnam />,
+      },
+      
+
+       {
+        path: 'blog/education-blog',
+        element: <BlogSection />,
       },
       
       

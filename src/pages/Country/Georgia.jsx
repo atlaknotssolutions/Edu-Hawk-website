@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import RussiaFlag from "../../Images/Russia/russia header threejpg.jpg";
 import kernal from "../../Images/top medical collages list/Bangladesh Medical College.png";
-import Russianflag2 from "../../Images/country flag png/Bangladesh-Flag-PNG-Isolated-HD.png";
+import Russianflag2 from "../../Images/country flag png/Georgia.svg";
 import MARISTATEUNIVERSITY from "../../Images/Russia/MARI STATE UNIVERSITY.jpg";
 import ORELSTATEUNIVERSITY from "../../Images/Russia/OREL STATE UNIVERSITY.jpg";
 import ORENBURGSTATEUNIVERSITY from "../../Images/Russia/ORENBURG STATE UNIVERSITY.jpg";
@@ -17,13 +17,13 @@ const Georgia = () => {
       <div className="relative h-screen overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/f/f6/2.%E0%A6%B6%E0%A6%BE%E0%A6%AA%E0%A6%B2%E0%A6%BE_%E0%A6%9A%E0%A6%A4%E0%A7%8D%E0%A6%AC%E0%A6%B0.jpg"
+            src="https://upload.wikimedia.org/wikipedia/commons/5/50/2014_Kutaisi%2C_Fontanna_na_centralnym_placu_%2806%29.jpg"
             alt="Kremlin Bridge City"
             className="w-full h-full object-cover brightness-75"
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-2xl">
-              STUDY MBBS IN  Kazakhstan
+              STUDY MBBS IN  GEORGIA
             </h1>
           </div>
         </div>
@@ -99,7 +99,7 @@ const Georgia = () => {
 
           <div>
             <img
-              src={kernal}
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Kasbek_from_Tsminda_Gergeti_%2810600419415%29.jpg"
               alt="Kremlin"
               className="rounded-xl shadow-2xl w-full h-auto object-cover"
             />
@@ -193,29 +193,14 @@ const Georgia = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: "Bangladesh Medical College",
-                img: MARISTATEUNIVERSITY,
+                name: "David Tvildiani Medical University",
+                img: "https://www.abroadadvice.com/wp-content/uploads/2020/07/David_Tvildiani_Medical_University-logo.jpg",
               },
               {
-                name: "Orel State University",
-                img: ORELSTATEUNIVERSITY,
-              },
-              {
-                name: "Orenburg State University",
-                img: ORENBURGSTATEUNIVERSITY,
-              },
-              {
-                name: "Perm State University",
-                img: "https://upload.wikimedia.org/wikipedia/commons/b/b4/%D0%9F%D0%B3%D0%BD%D0%B8%D1%83._%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81_%E2%84%965.jpg",
-              },
-              {
-                name: "Tver State Medical University",
-                img: TVERSTATEMEDICALUNIVERSITY,
-              },
-              {
-                name: "Altai State Medical University",
-                img: AltaiStateMedicalUniversity,
-              },
+                name: "University of Georgia",
+                img: "https://upload.wikimedia.org/wikipedia/commons/4/49/Old_College_UGA.jpg",
+              }
+              
             ].map((uni, i) => (
               <div
                 key={i}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import RussiaFlag from "../../Images/Russia/russia header threejpg.jpg";
 import kernal from "../../Images/Russia/about-russia.jpg";
-import Russianflag2 from "../../Images/country flag png/Russia.svg";
+import Russianflag2 from "../../Images/country flag png/Iran.svg";
 import MARISTATEUNIVERSITY from "../../Images/Russia/MARI STATE UNIVERSITY.jpg";
 import ORELSTATEUNIVERSITY from "../../Images/Russia/OREL STATE UNIVERSITY.jpg";
 import ORENBURGSTATEUNIVERSITY from "../../Images/Russia/ORENBURG STATE UNIVERSITY.jpg";
@@ -17,13 +17,13 @@ const Iran = () => {
       <div className="relative h-screen overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={RussiaFlag}
+            src="https://upload.wikimedia.org/wikipedia/commons/2/23/Azadi_Tower_%2829358497718%29.jpg"
             alt="Kremlin Bridge City"
             className="w-full h-full object-cover brightness-75"
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-2xl">
-              STUDY MBBS IN RUSSIA
+              STUDY MBBS IN IRAN
             </h1>
           </div>
         </div>
@@ -44,7 +44,7 @@ const Iran = () => {
           </div>
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-blue-900">
-              Explore MBBS Opportunities in Russia 2025–2026
+              Explore MBBS Opportunities in IRAN 2025–2026
             </h2>
           </div>
         </div>
@@ -53,7 +53,7 @@ const Iran = () => {
         <div className="grid md:grid-cols-2 gap-12 mb-20">
           <div>
             <h2 className="text-3xl font-bold text-center md:text-left text-blue-900 mb-6">
-              About Russia
+              About IRAN
             </h2>
             <p className="text-lg leading-relaxed text-gray-700">
               Russia has become popular among medical students, who are looking
@@ -97,7 +97,7 @@ const Iran = () => {
 
           <div>
             <img
-              src={kernal}
+              src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Isfahan_Royal_Mosque_general_%28retouched%29.jpg"
               alt="Kremlin"
               className="rounded-xl shadow-2xl w-full h-auto object-cover"
             />
@@ -109,7 +109,7 @@ const Iran = () => {
           {/* Left – Quick Info Table */}
           <div>
             <h3 className="text-2xl font-bold text-center text-blue-900 mb-6">
-              Quick Information – Study MBBS in Russia
+              Quick Information – Study MBBS in IRAN
             </h3>
 
             <div className="overflow-x-auto">
@@ -147,10 +147,10 @@ const Iran = () => {
           {/* Right – About MBBS */}
           <div>
             <h3 className="text-3xl font-bold text-blue-900 mb-6 text-center md:text-left">
-              About MBBS in Russia
+              About MBBS in IRAN
             </h3>
             <p className="text-lg leading-relaxed text-gray-700">
-              Studying MBBS in Russia is notably straightforward 
+              Studying MBBS in IRAN is notably straightforward 
             </p>
 
             {showMoreClimate ? (
@@ -173,34 +173,34 @@ const Iran = () => {
         {/* ==================== UNIVERSITIES GRID ==================== */}
         <div className="mb-20">
           <h2 className="text-4xl font-bold text-center text-blue-900 mb-12">
-            Top Medical Universities in Russia
+            Top Medical Universities in IRAN
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: "Mari State University",
-                img: MARISTATEUNIVERSITY,
+                name: "Islamic Azad University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/6/6f/JIA_enterance.jpg",
               },
               {
-                name: "Orel State University",
-                img: ORELSTATEUNIVERSITY,
+                name: "Tehran University of Medical Sciences",
+                img:"https://upload.wikimedia.org/wikipedia/commons/2/29/TUMS_medicine.jpg",
               },
               {
-                name: "Orenburg State University",
-                img: ORENBURGSTATEUNIVERSITY,
+                name: "Shiraz University of Medical Sciences",
+                img: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Shiraz-University-of-Medical-Sciences_Central-Building.jpg",
               },
               {
-                name: "Perm State University",
-                img: "https://upload.wikimedia.org/wikipedia/commons/b/b4/%D0%9F%D0%B3%D0%BD%D0%B8%D1%83._%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81_%E2%84%965.jpg",
+                name: "Shahid Beheshti University of Medical Science",
+                img: "https://upload.wikimedia.org/wikipedia/commons/6/69/SBMU_School_of_Medicine.jpg",
               },
               {
-                name: "Tver State Medical University",
-                img: TVERSTATEMEDICALUNIVERSITY,
+                name: "Ishfan University Medical Sciences",
+                img: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Voroodi.jpg",
               },
               {
-                name: "Altai State Medical University",
-                img: AltaiStateMedicalUniversity,
+                name: "Iran University of Medical Sciences",
+                img: "https://upload.wikimedia.org/wikipedia/commons/d/da/Iran_University_of_Medical_Sciences%28IUMS%29.jpg",
               },
             ].map((uni, i) => (
               <div
@@ -226,7 +226,7 @@ const Iran = () => {
         <div className="grid md:grid-cols-2 gap-12 mb-20">
           <div>
             <h2 className="text-3xl font-bold text-blue-900 mb-8 text-center md:text-left">
-              Advantages of Studying MBBS in Russia 2025–2026
+              Advantages of Studying MBBS in IRAN 2025–2026
             </h2>
 
             <div className="space-y-6">

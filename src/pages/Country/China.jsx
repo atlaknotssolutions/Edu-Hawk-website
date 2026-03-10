@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import RussiaFlag from "../../Images/Russia/russia header threejpg.jpg";
 import kernal from "../../Images/top medical collages list/Bangladesh Medical College.png";
-import Russianflag2 from "../../Images/country flag png/Bangladesh-Flag-PNG-Isolated-HD.png";
+import Russianflag2 from "../../Images/country flag png/China.svg";
 import MARISTATEUNIVERSITY from "../../Images/Russia/MARI STATE UNIVERSITY.jpg";
 import ORELSTATEUNIVERSITY from "../../Images/Russia/OREL STATE UNIVERSITY.jpg";
 import ORENBURGSTATEUNIVERSITY from "../../Images/Russia/ORENBURG STATE UNIVERSITY.jpg";
@@ -17,13 +17,13 @@ const China = () => {
       <div className="relative h-screen overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/f/f6/2.%E0%A6%B6%E0%A6%BE%E0%A6%AA%E0%A6%B2%E0%A6%BE_%E0%A6%9A%E0%A6%A4%E0%A7%8D%E0%A6%AC%E0%A6%B0.jpg"
+            src="https://upload.wikimedia.org/wikipedia/commons/d/df/Pudong_Shanghai_November_2017_panorama.jpg"
             alt="Kremlin Bridge City"
             className="w-full h-full object-cover brightness-75"
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-2xl">
-              STUDY MBBS IN  Kazakhstan
+              STUDY MBBS IN  CHINA
             </h1>
           </div>
         </div>
@@ -44,7 +44,7 @@ const China = () => {
           </div>
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-blue-900">
-              Explore MBBS Opportunities in Kazakhstan 2026–2027
+              Explore MBBS Opportunities in China 2026–2027
             </h2>
           </div>
         </div>
@@ -99,7 +99,7 @@ const China = () => {
 
           <div>
             <img
-              src={kernal}
+              src="https://upload.wikimedia.org/wikipedia/commons/6/64/CR400BF-Z-0312%40BJI_%2820231009152047%29.jpg"
               alt="Kremlin"
               className="rounded-xl shadow-2xl w-full h-auto object-cover"
             />
@@ -193,28 +193,28 @@ const China = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: "Bangladesh Medical College",
-                img: MARISTATEUNIVERSITY,
+                name: "Nanjing Medical University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/d/de/Dormitory_of_Bainiantang.jpg",
               },
               {
-                name: "Orel State University",
-                img: ORELSTATEUNIVERSITY,
+                name: "Southern Medical University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/b/b9/Qilingang_campus.jpg",
               },
               {
-                name: "Orenburg State University",
-                img: ORENBURGSTATEUNIVERSITY,
+                name: "Tianjin Medical University",
+                img:"https://upload.wikimedia.org/wikipedia/commons/8/89/2014%E5%B9%B46%E6%9C%88%E5%A4%A9%E6%B4%A5%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%9B%AD.jpg",
               },
               {
-                name: "Perm State University",
-                img: "https://upload.wikimedia.org/wikipedia/commons/b/b4/%D0%9F%D0%B3%D0%BD%D0%B8%D1%83._%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81_%E2%84%965.jpg",
+                name: "China Medical University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/0/00/CMU_20061030.jpg",
               },
               {
-                name: "Tver State Medical University",
-                img: TVERSTATEMEDICALUNIVERSITY,
+                name: "Dalian Medical University",
+                img: "https://images.shiksha.com/mediadata/images/1597819161phpzHqyKj_g.png",
               },
               {
-                name: "Altai State Medical University",
-                img: AltaiStateMedicalUniversity,
+                name: "Shandong Uni. of Traditional Chinese Med.",
+                img: "https://upload.wikimedia.org/wikipedia/commons/2/29/%E5%B1%B1%E4%B8%9C%E5%A4%A7%E5%AD%A6%EF%BC%88%E4%B8%AD%E5%BF%83%E6%A0%A1%E5%8C%BA%EF%BC%89%E5%8D%97%E9%97%A8%EF%BC%88%E6%AD%A3%E9%97%A8%EF%BC%89.jpg",
               },
             ].map((uni, i) => (
               <div

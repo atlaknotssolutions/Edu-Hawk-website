@@ -17,13 +17,13 @@ const Vietnam = () => {
       <div className="relative h-screen overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/f/f6/2.%E0%A6%B6%E0%A6%BE%E0%A6%AA%E0%A6%B2%E0%A6%BE_%E0%A6%9A%E0%A6%A4%E0%A7%8D%E0%A6%AC%E0%A6%B0.jpg"
+            src="https://upload.wikimedia.org/wikipedia/commons/2/23/%C3%93pera%2C_Ciudad_Ho_Chi_Minh%2C_Vietnam%2C_2013-08-14%2C_DD_02.JPG"
             alt="Kremlin Bridge City"
             className="w-full h-full object-cover brightness-75"
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-2xl">
-              STUDY MBBS IN  Kazakhstan
+              STUDY MBBS IN  VIETNAM
             </h1>
           </div>
         </div>
@@ -37,7 +37,7 @@ const Vietnam = () => {
         <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
           <div>
             <img
-              src={Russianflag2}
+              src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg"
               alt="Russia flag"
               className="w-32 md:w-40 border-4 border-gray-800 rounded shadow-lg"
             />
@@ -99,7 +99,7 @@ const Vietnam = () => {
 
           <div>
             <img
-              src={kernal}
+              src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Hanoi_dhyk.jpg"
               alt="Kremlin"
               className="rounded-xl shadow-2xl w-full h-auto object-cover"
             />
@@ -193,29 +193,26 @@ const Vietnam = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: "Bangladesh Medical College",
-                img: MARISTATEUNIVERSITY,
+                name: "Hanoi Medical University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Hanoi_dhyk.jpg",
               },
               {
-                name: "Orel State University",
-                img: ORELSTATEUNIVERSITY,
+                name: "Ho Chi Minh City University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Z5372420599304_7ca55d21ee3a707247033180d3108fc6.jpg",
               },
               {
-                name: "Orenburg State University",
-                img: ORENBURGSTATEUNIVERSITY,
+                name: "Hue University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/7/72/Hu%E1%BA%BF_University.jpg",
               },
               {
-                name: "Perm State University",
-                img: "https://upload.wikimedia.org/wikipedia/commons/b/b4/%D0%9F%D0%B3%D0%BD%D0%B8%D1%83._%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81_%E2%84%965.jpg",
+                name: "Can Tho University",
+                img: "https://photo-cms-vovworld.zadn.vn/w730/uploaded/vovworld/wpxlqdhnw/2020_03_27/pst7_anh2_fyaa.jpg",
               },
               {
-                name: "Tver State Medical University",
-                img: TVERSTATEMEDICALUNIVERSITY,
-              },
-              {
-                name: "Altai State Medical University",
-                img: AltaiStateMedicalUniversity,
-              },
+                name: "Hai Phong University",
+                img: "https://upload.wikimedia.org/wikipedia/commons/1/19/Dhyhp.JPG",
+              }
+            
             ].map((uni, i) => (
               <div
                 key={i}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import RussiaFlag from "../../Images/Russia/russia header threejpg.jpg";
+import RussiaFlag from "../../Images/country flag png/Nepal.svg";
 import kernal from "../../Images/top medical collages list/Bangladesh Medical College.png";
 import Russianflag2 from "../../Images/country flag png/Bangladesh-Flag-PNG-Isolated-HD.png";
 import MARISTATEUNIVERSITY from "../../Images/Russia/MARI STATE UNIVERSITY.jpg";
@@ -23,7 +23,7 @@ const Nepal = () => {
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-2xl">
-              STUDY MBBS IN  Bangladesh
+              STUDY MBBS IN  Nepal
             </h1>
           </div>
         </div>
@@ -37,14 +37,14 @@ const Nepal = () => {
         <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
           <div>
             <img
-              src={Russianflag2}
+              src={RussiaFlag}
               alt="Russia flag"
-              className="w-32 md:w-40 border-4 border-gray-800 rounded shadow-lg"
+              className="w-32 md:w-40  shadow-lg"
             />
           </div>
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-blue-900">
-              Explore MBBS Opportunities in Bangladesh 2026–2027
+              Explore MBBS Opportunities in Nepal 2026–2027
             </h2>
           </div>
         </div>
@@ -53,7 +53,7 @@ const Nepal = () => {
         <div className="grid md:grid-cols-2 gap-12 mb-20">
           <div>
             <h2 className="text-3xl font-bold text-center md:text-left text-blue-900 mb-6">
-              About Russia
+              About Nepal
             </h2>
             <p className="text-lg leading-relaxed text-gray-700">
               Russia has become popular among medical students, who are looking
@@ -99,7 +99,7 @@ const Nepal = () => {
 
           <div>
             <img
-              src={kernal}
+              src="https://upload.wikimedia.org/wikipedia/commons/4/40/Nepal_Patan_Mangal.jpg"
               alt="Kremlin"
               className="rounded-xl shadow-2xl w-full h-auto object-cover"
             />
@@ -111,7 +111,7 @@ const Nepal = () => {
           {/* Left – Quick Info Table */}
           <div>
             <h3 className="text-2xl font-bold text-center text-blue-900 mb-6">
-              Quick Information – Study MBBS in Russia
+              Quick Information – Study MBBS in Nepal
             </h3>
 
             <div className="overflow-x-auto">
@@ -161,16 +161,16 @@ const Nepal = () => {
           {/* Right – About MBBS */}
           <div>
             <h3 className="text-3xl font-bold text-blue-900 mb-6 text-center md:text-left">
-              About MBBS in Russia
+              About MBBS in Nepal
             </h3>
             <p className="text-lg leading-relaxed text-gray-700">
-              Studying MBBS in Russia is notably straightforward
+              Studying MBBS in Nepal is notably straightforward
             </p>
 
             {showMoreClimate ? (
               <p className="mt-4 text-lg leading-relaxed text-gray-700">
                 — no entrance exam (apart from NEET for Indian students). The
-                Russian government subsidizes education, keeping fees relatively
+                Nepal government subsidizes education, keeping fees relatively
                 low...
               </p>
             ) : null}
@@ -187,34 +187,34 @@ const Nepal = () => {
         {/* ==================== UNIVERSITIES GRID ==================== */}
         <div className="mb-20">
           <h2 className="text-4xl font-bold text-center text-blue-900 mb-12">
-            Top Medical Universities in Russia
+            Top Medical Universities in Nepal
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: "Bangladesh Medical College",
-                img: MARISTATEUNIVERSITY,
+                name: "Nepalgunj Medical College",
+                img: "https://www.edufever.com/wp-content/uploads/2022/08/Nepalgunj-Medical-College.webp",
               },
               {
-                name: "Orel State University",
-                img: ORELSTATEUNIVERSITY,
+                name: "Manipul College of Medical Science",
+                img: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Manipal_Teaching_Hospital.jpg",
               },
               {
-                name: "Orenburg State University",
-                img: ORENBURGSTATEUNIVERSITY,
+                name: "Kathmandu Medical College",
+                img: "https://careeradvice.in/mbbs-abroad/wp-content/uploads/2021/12/featured-kathmandu-medical-images.png",
               },
               {
-                name: "Perm State University",
-                img: "https://upload.wikimedia.org/wikipedia/commons/b/b4/%D0%9F%D0%B3%D0%BD%D0%B8%D1%83._%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81_%E2%84%965.jpg",
+                name: "Lumbini Medical College",
+                img: "https://flyfuture.in/admin/services/1658570838.jpg",
               },
               {
-                name: "Tver State Medical University",
-                img: TVERSTATEMEDICALUNIVERSITY,
+                name: "Devdaha Medical College  and Research",
+                img: "https://ik.imagekit.io/lyzj6ywpw/main-images/devdaha-medical-college-and-research-institute/image1.jpg",
               },
               {
-                name: "Altai State Medical University",
-                img: AltaiStateMedicalUniversity,
+                name: "Chitwan Medical",
+                img: "https://mycareersview.com/afile/mcv16373_5fe0220b67856_chitawan.jpg",
               },
             ].map((uni, i) => (
               <div
@@ -240,7 +240,7 @@ const Nepal = () => {
         <div className="grid md:grid-cols-2 gap-12 mb-20">
           <div>
             <h2 className="text-3xl font-bold text-blue-900 mb-8 text-center md:text-left">
-              Advantages of Studying MBBS in Russia 2025–2026
+              Advantages of Studying MBBS in Nepal 2025–2026
             </h2>
 
             <div className="space-y-6">
@@ -282,10 +282,10 @@ const Nepal = () => {
 
           <div>
             <h2 className="text-3xl font-bold text-blue-900 mb-8 text-center">
-              Cost of Study MBBS in Russia
+              Cost of Study MBBS in Nepal
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              The cost of the <strong> MBBS course in Russia</strong> is very
+              The cost of the <strong> MBBS course in Nepal</strong> is very
               low for Indian students who want to pursue their{" "}
               <strong>MBBS</strong> course in Russia. Russia is a very demanding
               country for Indian students who want to pursue their MBBS course.
@@ -315,12 +315,12 @@ const Nepal = () => {
       <div className="bg-gradient-to-b from-gray-50 to-white py-16">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center mb-10">
-            Food and Accommodation Cost – MBBS in Russia
+            Food and Accommodation Cost – MBBS in Nepal
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
             <p>
-              Most Russian medical universities provide comfortable hostel
+              Most Nepal medical universities provide comfortable hostel
               accommodation specially designed for international students. Rooms
               are usually shared (2–3 students per room) and come fully
               furnished with:
@@ -372,7 +372,7 @@ const Nepal = () => {
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center mb-10">
-            Admission Process for MBBS in Russia 2025–2026
+            Admission Process for MBBS in Nepal 2025–2026
           </h2>
 
           <div className="max-w-4xl mx-auto">
@@ -451,7 +451,7 @@ const Nepal = () => {
             {/* Left - Required Documents */}
             <div>
               <h2 className="text-3xl font-bold text-blue-900 mb-8 text-center md:text-left">
-                Required Documents for MBBS in Russia 2025–2026
+                Required Documents for MBBS in Nepal 2025–2026
               </h2>
 
               <div className="space-y-6">
@@ -506,7 +506,7 @@ const Nepal = () => {
                 <ul className="space-y-4">
                   <li>
                     <strong>
-                      Russian Government Scholarship (Open Doors / Quota)
+                      Nepal Government Scholarship (Open Doors / Quota)
                     </strong>
                     <br />
                     <span className="text-gray-600 text-sm">
@@ -550,7 +550,7 @@ const Nepal = () => {
                     Criteria
                   </th>
                   <th className="p-4 border border-gray-300 text-center font-semibold">
-                    MBBS in Russia
+                    MBBS in Npeal
                   </th>
                   <th className="p-4 border border-gray-300 text-center font-semibold">
                     MBBS in India
