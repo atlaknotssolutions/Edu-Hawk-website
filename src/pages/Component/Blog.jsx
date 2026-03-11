@@ -1,114 +1,122 @@
 
-import { useState } from 'react';
+
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Blog = () => {
+  const [categories, setCategories] = useState(['All']);
+  const [products, setProducts] = useState([]);
   const [activeCategory, setActiveCategory] = useState('All');
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  const categories = ['All', 'Technology', 'Lifestyle', 'Travel', 'Food', 'Finance'];
+  
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        setLoading(true);
 
-  const blogPosts = [
-    {
-      id: 1,
-      title: "Why React Server Components Will Change Frontend Forever",
-      excerpt: "The biggest shift in React since hooks — and most developers still don't understand it properly.",
-      category: "Technology",
-      date: "Mar 8, 2026",
-      readTime: "8 min read",
-      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&auto=format&fit=crop",
-    },
-    {
-      id: 2,
-      title: "10 Hidden Beaches in Goa You Won't Find on Instagram",
-      excerpt: "Less crowded, more peaceful — these secret spots are still untouched in 2026.",
-      category: "Travel",
-      date: "Feb 28, 2026",
-      readTime: "6 min read",
-      image: "https://images.unsplash.com/photo-1512343879784-d9610d7d3f93?w=800&auto=format&fit=crop",
-    },
-    {
-      id: 3,
-      title: "Best Indian Street Food Cities in 2026 – Ranked",
-      excerpt: "From Indore's poha to Kolkata's kathi rolls — real ranking after eating 400+ dishes.",
-      category: "Food",
-      date: "Mar 1, 2026",
-      readTime: "12 min read",
-      image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=800&auto=format&fit=crop",
-    },
-    {
-      id: 4,
-      title: "How I Built ₹12 Lakh Passive Income with Mutual Funds",
-      excerpt: "Real numbers, real strategy — no fluff, no get-rich-quick nonsense.",
-      category: "Finance",
-      date: "Feb 15, 2026",
-      readTime: "10 min read",
-      image: "https://images.unsplash.com/photo-1556155099-490a1ba16284?w=800&auto=format&fit=crop",
-    },
-    {
-      id: 5,
-      title: "Morning Routine That Changed My Life in 30 Days",
-      excerpt: "No 5 AM club nonsense — realistic routine for Indians who wake up at 7.",
-      category: "Lifestyle",
-      date: "Mar 5, 2026",
-      readTime: "7 min read",
-      image: "https://images.unsplash.com/photo-1506784365847-bbad939e0659?w=800&auto=format&fit=crop",
-    },
-    {
-      id: 6,
-      title: "Tailwind CSS vs Chakra UI in 2026 – Honest Comparison",
-      excerpt: "After building 8 production apps — which one should you choose today?",
-      category: "Technology",
-      date: "Feb 20, 2026",
-      readTime: "9 min read",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop",
-    },
-  ];
+        const res = await fetch('http://localhost:8000/api/product');
+        if (!res.ok) throw new Error(`HTTP ${res.status} – ${res.statusText}`);
 
-  const filteredPosts =
+        const json = await res.json();
+        console.log('Products raw response:', json);
+
+        // ✅ API returns { success: true, data: [...] }
+        const productArray = Array.isArray(json)
+          ? json
+          : Array.isArray(json?.data)
+          ? json.data
+          : json?.products ?? json?.results ?? [];
+
+        setProducts(productArray);
+
+        // ✅ Derive unique category names from the nested category objects
+        const uniqueCategories = [
+          'All',
+          ...new Set(
+            productArray
+              .map((p) => p?.category?.name ?? null)
+              .filter(Boolean)
+          ),
+        ];
+        setCategories(uniqueCategories);
+      } catch (err) {
+        console.error('Products fetch failed:', err);
+        setError(err.message || 'Failed to load products');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  // ✅ Filter by nested category.name
+  const filteredProducts =
     activeCategory === 'All'
-      ? blogPosts
-      : blogPosts.filter((post) => post.category === activeCategory);
+      ? products
+      : products.filter(
+          (product) => product?.category?.name === activeCategory
+        );
 
-  const faqs = [
-    {
-      question: "How often do you publish new articles?",
-      answer: "2–3 high-quality articles every week. We focus on depth instead of daily posting.",
-    },
-    {
-      question: "Can I write for this blog?",
-      answer: "Yes! We accept guest posts if the topic matches our categories and quality standards.",
-    },
-    {
-      question: "Is the content free to read?",
-      answer: "All articles are 100% free. No paywall, no subscription needed.",
-    },
-  ];
+  // ─────────────────────────────────────────────────────────────
+  //  Render
+  // ─────────────────────────────────────────────────────────────
+
+  if (loading) {
+    return (
+      <section className="min-h-screen bg-gray-50 flex items-center justify-center py-16 md:py-24">
+        <div className="text-xl md:text-2xl font-medium text-gray-600 animate-pulse">
+          Loading...
+        </div>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section className="min-h-screen bg-gray-50 flex items-center justify-center py-16 md:py-24">
+        <div className="text-xl md:text-2xl text-red-600 font-medium text-center px-4">
+          {error}
+          <br />
+          <button
+            onClick={() => window.location.reload()}
+            className="mt-6 px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition"
+          >
+            Retry
+          </button>
+        </div>
+      </section>
+    );
+  }
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section className="bg-gray-50 min-h-screen py-12 md:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Title */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Latest Articles
+        {/* Header */}
+        <div className="text-center mb-10 md:mb-14">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Latest Products / Articles
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Handpicked stories about tech, travel, food, money and better living
+          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+            Discover our latest collection – filter by category
           </p>
         </div>
 
-        {/* Category Tabs */}
-        <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-12">
+        {/* Category Filters */}
+        <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-10 md:mb-14">
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
               className={`
-                px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200
+                px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-sm sm:text-base font-medium
+                transition-all duration-300 ease-in-out transform hover:scale-105
                 ${
                   activeCategory === category
-                    ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-200'
-                    : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
+                    ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-300/50'
+                    : 'bg-white text-gray-700 border border-gray-200 hover:bg-gray-50 hover:border-gray-300'
                 }
               `}
             >
@@ -117,86 +125,76 @@ const Blog = () => {
           ))}
         </div>
 
-        {/* Blog Grid */}
-        {filteredPosts.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {filteredPosts.map((post) => (
+        {/* Products Grid */}
+        {filteredProducts.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+            {filteredProducts.map((product) => (
               <article
-                key={post.id}
-                className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col h-full"
+                key={product._id || product.id}
+                className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full group"
               >
-                <div className="aspect-[16/9] relative">
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <span className="absolute top-4 left-4 bg-indigo-600 text-white text-xs font-medium px-3 py-1 rounded-full">
-                    {post.category}
-                  </span>
-                </div>
-
-                <div className="p-6 flex flex-col flex-grow">
-                  <div className="flex items-center text-sm text-gray-500 mb-3">
-                    <span>{post.date}</span>
-                    <span className="mx-2">•</span>
-                    <span>{post.readTime}</span>
+                {/* Thumbnail */}
+                {product.images?.[0] && (
+                  <div className="overflow-hidden h-52">
+                    <img
+                      src={product.images[0]}
+                      alt={product.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
+                )}
 
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
-                    {post.title}
+                {/* Body */}
+                <div className="p-5 flex flex-col flex-1">
+                  {/* Category badge */}
+                  {product.category?.name && (
+                    <span className="text-xs font-semibold text-indigo-600 uppercase tracking-wide mb-2">
+                      {product.category.name}
+                    </span>
+                  )}
+
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
+                    {product.name}
                   </h3>
 
-                  <p className="text-gray-600 mb-6 line-clamp-3 flex-grow">
-                    {post.excerpt}
-                  </p>
+                  {product.author && (
+                    <p className="text-sm text-gray-500 mb-3">
+                      By <span className="font-medium">{product.author}</span>
+                    </p>
+                  )}
 
-                  <div className="mt-auto">
-                   
+                  {product.description && (
+                    <div
+                      className="text-sm text-gray-600 line-clamp-3 mb-4 flex-1"
+                      dangerouslySetInnerHTML={{ __html: product.description }}
+                    />
+                  )}
 
-                    <Link
-  to={`/blog/${post.id}`}
-  className="text-indigo-600 font-medium hover:text-indigo-800 transition-colors"
->
-  Read full article →
-</Link>
-                  </div>
+                  <Link
+                    to={`/blog/${product._id || product.id}`}
+                    className="mt-auto inline-block text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition"
+                  >
+                    Read more →
+                  </Link>
                 </div>
               </article>
             ))}
           </div>
         ) : (
-          <div className="text-center py-20 text-gray-500">
-            No articles found in this category yet.
+          <div className="text-center py-16 sm:py-20 md:py-24 text-gray-500 text-lg sm:text-xl">
+            No items found{activeCategory !== 'All' ? ` in "${activeCategory}"` : ''}.
           </div>
         )}
 
-        {/* FAQ Section */}
-        <div className="mt-24 pt-16 border-t border-gray-200">
-          <h3 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Frequently Asked Questions
-          </h3>
 
-          <div className="max-w-4xl mx-auto space-y-6">
-            {faqs.map((faq, index) => (
-              <details
-                key={index}
-                className="bg-white rounded-xl shadow-sm group"
-              >
-                <summary className="flex justify-between items-center cursor-pointer p-6 text-lg font-medium text-gray-900 hover:text-indigo-700 transition-colors">
-                  {faq.question}
-                  <span className="ml-4 text-indigo-600 group-open:rotate-180 transition-transform">
-                    ▼
-                  </span>
-                </summary>
-                <div className="px-6 pb-6 pt-2 text-gray-600">
-                  {faq.answer}
-                </div>
-              </details>
-            ))}
-          </div>
-        </div>
-      </div>
+        
+         {/* FAQ Section (optional – comment out if not needed) */}
+        {/* Uncomment and define faqs array if you want to keep it */}
+         
+      
+   
+     </div>
+      
     </section>
   );
 };

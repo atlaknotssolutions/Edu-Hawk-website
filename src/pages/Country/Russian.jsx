@@ -297,63 +297,7 @@ const Russia = () => {
         <span className="font-bold text-lg">ENROLL NOW!</span>
       </button>
 
-      {/* ==================== FOOD & ACCOMMODATION SECTION ==================== */}
-      <div className="bg-gradient-to-b from-gray-50 to-white py-16">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center mb-10">
-            Food and Accommodation Cost – MBBS in Russia
-          </h2>
-
-          <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-            <p>
-              Most Russian medical universities provide comfortable hostel
-              accommodation specially designed for international students. Rooms
-              are usually shared (2–3 students per room) and come fully
-              furnished with:
-            </p>
-            <ul className="list-disc pl-6 mt-4 space-y-2">
-              <li>Beds, mattresses, bedsheets, blankets, pillows</li>
-              <li>Study tables, chairs, wardrobes/cupboards</li>
-              <li>Central heating (very important in Russian winters)</li>
-            </ul>
-
-            <p className="mt-6">Hostels typically include:</p>
-            <ul className="list-disc pl-6 mt-4 space-y-2">
-              <li>
-                Common kitchen where students can cook their own food (very
-                popular among Indian students to prepare Indian meals)
-              </li>
-              <li>Common washing machines / laundry rooms</li>
-              <li>
-                Indian mess / canteen facilities in many universities (or
-                nearby)
-              </li>
-              <li>
-                Indian restaurants and grocery stores often within walking
-                distance
-              </li>
-            </ul>
-
-            <p className="mt-6">
-              <strong>Approximate monthly living expenses (2025–2026):</strong>
-            </p>
-            <ul className="list-disc pl-6 mt-4 space-y-2">
-              <li>Hostel / Accommodation: ₹8,000 – ₹18,000</li>
-              <li>Food (self-cooking + mess): ₹8,000 – ₹15,000</li>
-              <li>Transport + Miscellaneous: ₹3,000 – ₹7,000</li>
-              <li>
-                <strong>Total monthly:</strong> ≈ ₹20,000 – ₹40,000
-              </li>
-            </ul>
-
-            <p className="mt-6 italic text-gray-600">
-              Many universities also offer Indian food in their mess/canteen,
-              helping students maintain a familiar diet without much extra cost.
-            </p>
-          </div>
-        </div>
-      </div>
-
+    
       {/* ==================== ADMISSION PROCESS ==================== */}
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-6xl">
